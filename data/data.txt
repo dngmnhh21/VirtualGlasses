@@ -1,0 +1,11 @@
+let dataClasses = [
+    {id:"G1", src:"./img/",virtialImg:"./img/",brand:"Armani Exchange",name:"Bamboo wood",color:"Brown",price:150 ,description:" Lorem ipsum dolor sit amet consectetur adipisicing elit."},
+    {id:"G2", src:"./img/",virtialImg:"./img/",brand:"Arnette",name:"American flag",color:"American flag",price:150 ,description:" Lorem ipsum dolor sit amet consectetur adipisicing elit."},
+    {id:"G3", src:"./img/",virtialImg:"./img/",brand:"Burbery",name:"Belt of Hippolyte",color:"Blue",price:100 ,description:" Lorem ipsum dolor sit amet consectetur adipisicing elit."},
+    {id:"G4", src:"./img/",virtialImg:"./img/",brand:"Coarch",name:"Cretan Bull",color:"Red",price:100 ,description:" Lorem ipsum dolor sit amet consectetur adipisicing elit."},
+    {id:"G5", src:"./img/",virtialImg:"./img/",brand:"D&G",name:"Joyride",color:"Gold",price:180 ,description:" Lorem ipsum dolor sit amet consectetur adipisicing elit."},
+    {id:"G6", src:"./img/",virtialImg:"./img/",brand:"Polo",name:"Natty Ice",color:"Blue",price:120 ,description:" Lorem ipsum dolor sit amet consectetur adipisicing elit."},
+    {id:"G7", src:"./img/",virtialImg:"./img/",brand:"Ralph",name:"Tortoise",color:"Black",price:120 ,description:" Lorem ipsum dolor sit amet consectetur adipisicing elit."},
+    {id:"G8", src:"./img/",virtialImg:"./img/",brand:"Polo",name:"Henry",color:"Red",price:120 ,description:" Lorem ipsum dolor sit amet consectetur adipisicing elit."},
+    {id:"G9", src:"./img/",virtialImg:"./img/",brand:"Coarch",name:"Midnight Vixen Remix",color:"Blue,Black",price:120 ,description:" Lorem ipsum dolor sit amet consectetur adipisicing elit."}
+];

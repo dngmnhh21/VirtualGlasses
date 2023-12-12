@@ -1,0 +1,50 @@
+.vglasses_left{
+    background-color: white;
+    padding: 20px 40px;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2),0 4px 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.vglasses_left .col-4{
+    align-self: center;
+}
+
+.vglasses_items{
+    cursor: pointer;
+}
+
+.vglasses_right{
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2),0 4px 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.vglasses_model{
+    background-image: url('../img/model.jpg');
+    background-position: center top;
+    background-size: cover;
+    height: 600px;
+}
+
+.vglasses_model img{
+    position: absolute;
+    top: 32%;
+    left: 25%;
+    width: 238px;
+    height: 85px;
+    opacity: 0.9;
+}
+
+.vglasses_card{
+    position: relative;
+    overflow: hidden;
+    background-color: white;
+}
+
+.vglasses_info{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    color: white;
+    padding: 20px;
+    display: none;
+}
