@@ -3,15 +3,15 @@
 
 
 let dataClasses = [
-    {id:"G1", src:"./img/g1_l.jpg",virtialImg:"./img/",brand:"Armani Exchange",name:"Bamboo wood",color:"Brown",price:150 ,description:" Lorem ipsum dolor sit amet consectetur adipisicing elit."},
-    {id:"G2", src:"./img/g1_l.jpg",virtialImg:"./img/",brand:"Arnette",name:"American flag",color:"American flag",price:150 ,description:" Lorem ipsum dolor sit amet consectetur adipisicing elit."},
-    {id:"G3", src:"./img/g1_l.jpg",virtialImg:"./img/",brand:"Burbery",name:"Belt of Hippolyte",color:"Blue",price:100 ,description:" Lorem ipsum dolor sit amet consectetur adipisicing elit."},
-    {id:"G4", src:"./img/g1_l.jpg",virtialImg:"./img/",brand:"Coarch",name:"Cretan Bull",color:"Red",price:100 ,description:" Lorem ipsum dolor sit amet consectetur adipisicing elit."},
-    {id:"G5", src:"./img/g1_l.jpg",virtialImg:"./img/",brand:"D&G",name:"Joyride",color:"Gold",price:180 ,description:" Lorem ipsum dolor sit amet consectetur adipisicing elit."},
-    {id:"G6", src:"./img/g1_l.jpg",virtialImg:"./img/",brand:"Polo",name:"Natty Ice",color:"Blue",price:120 ,description:" Lorem ipsum dolor sit amet consectetur adipisicing elit."},
-    {id:"G7", src:"./img/g1_l.jpg",virtialImg:"./img/",brand:"Ralph",name:"Tortoise",color:"Black",price:120 ,description:" Lorem ipsum dolor sit amet consectetur adipisicing elit."},
-    {id:"G8", src:"./img/g1_l.jpg",virtialImg:"./img/",brand:"Polo",name:"Henry",color:"Red",price:120 ,description:" Lorem ipsum dolor sit amet consectetur adipisicing elit."},
-    {id:"G9", src:"./img/g1_l.jpg",virtialImg:"./img/",brand:"Coarch",name:"Midnight Vixen Remix",color:"Blue,Black",price:120 ,description:" Lorem ipsum dolor sit amet consectetur adipisicing elit."}
+    {id:"G1", src:"./img/g1_l.jpg",virtialImg:"./img/g1_r.png",brand:"Armani Exchange",name:"Bamboo wood",color:"Brown",price:150 ,description:" Lorem ipsum dolor sit amet consectetur adipisicing elit."},
+    {id:"G2", src:"./img/g1_l.jpg",virtialImg:"./img/g1_r.png",brand:"Arnette",name:"American flag",color:"American flag",price:150 ,description:" Lorem ipsum dolor sit amet consectetur adipisicing elit."},
+    {id:"G3", src:"./img/g1_l.jpg",virtialImg:"./img/g1_r.png",brand:"Burbery",name:"Belt of Hippolyte",color:"Blue",price:100 ,description:" Lorem ipsum dolor sit amet consectetur adipisicing elit."},
+    {id:"G4", src:"./img/g1_l.jpg",virtialImg:"./img/g1_r.png",brand:"Coarch",name:"Cretan Bull",color:"Red",price:100 ,description:" Lorem ipsum dolor sit amet consectetur adipisicing elit."},
+    {id:"G5", src:"./img/g1_l.jpg",virtialImg:"./img/g1_r.png",brand:"D&G",name:"Joyride",color:"Gold",price:180 ,description:" Lorem ipsum dolor sit amet consectetur adipisicing elit."},
+    {id:"G6", src:"./img/g1_l.jpg",virtialImg:"./img/g1_r.png",brand:"Polo",name:"Natty Ice",color:"Blue",price:120 ,description:" Lorem ipsum dolor sit amet consectetur adipisicing elit."},
+    {id:"G7", src:"./img/g1_l.jpg",virtialImg:"./img/g1_r.png",brand:"Ralph",name:"Tortoise",color:"Black",price:120 ,description:" Lorem ipsum dolor sit amet consectetur adipisicing elit."},
+    {id:"G8", src:"./img/g1_l.jpg",virtialImg:"./img/g1_r.png",brand:"Polo",name:"Henry",color:"Red",price:120 ,description:" Lorem ipsum dolor sit amet consectetur adipisicing elit."},
+    {id:"G9", src:"./img/g1_l.jpg",virtialImg:"./img/g1_r.png",brand:"Coarch",name:"Midnight Vixen Remix",color:"Blue,Black",price:120 ,description:" Lorem ipsum dolor sit amet consectetur adipisicing elit."}
 ];
 
 //import các lớp đối tượng vào main
@@ -62,7 +62,7 @@ const showInfo = (gObject)=>{
     let divInfo = getEle("glassesInfo");
 
     divAvatar.innerHTML = `
-        <img src="${gObject.virtialImg}">
+        <img id="glasses" src="${gObject.virtualImg}">
     `;
 
     let status = "";
@@ -70,7 +70,7 @@ const showInfo = (gObject)=>{
         status = "Stocking"
     }else{
         status = "Sold Out"
-    }
+    } 
     divInfo.innerHTML = `
        <h5>${gObject.name} - ${gObject.brand} (${gObject.color})</h5>
        <p class = "card-text">
@@ -83,3 +83,18 @@ const showInfo = (gObject)=>{
     `;
     divInfo.style.display = "block";
 }
+
+
+const removeGlasses = (isDisplay)=>{
+     let glasses = getEle("glasses");
+     if(glasses!= null){
+        if(isDisplay){
+            glasses.style.opacity = 0.9;
+         }else{
+            glasses.style.opacity = 0;
+         }
+     }
+    
+}
+
+window.removeGlasses = removeGlasses;
